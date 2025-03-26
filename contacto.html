@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header align="center">
+        <h1>Formulario de Contacto</h1>
+        <p>Por favor, rellene los campos a continuación para ponerse en contacto.</p>
+    </header>
+
+    <form action="enviar_formulario.php" method="post" style="text-align: center;">
+        <div style="margin-bottom: 20px;">
+            <label for="nombre" style="display: block;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required style="padding: 10px; width: 300px;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label for="correo" style="display: block;">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required style="padding: 10px; width: 300px;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label for="telefono" style="display: block;">Teléfono (opcional):</label>
+            <input type="tel" id="telefono" name="telefono" style="padding: 10px; width: 300px;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label for="mensaje" style="display: block;">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required style="padding: 10px; width: 300px;"></textarea>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="preferencia" style="display: block;">Preferencia de contacto:</label>
+            <input type="radio" id="email" name="preferencia" value="email" checked>
+            <label for="email">Correo electrónico</label><br>
+            <input type="radio" id="telefono" name="preferencia" value="telefono">
+            <label for="telefono">Teléfono</label><br>
+        </div>
+
+        <button type="submit" style="padding: 10px 20px; border: none; border-radius: 5px;">Enviar</button>
+    </form>
+</body>
+</html>
